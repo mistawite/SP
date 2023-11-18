@@ -32,7 +32,8 @@ recognition.addEventListener("result", (e) => {
       p.innerText = "My Name is Jeevan";
       texts.appendChild(p);
     }
-        if (text.includes("What is this project")||("What is this")) {
+        if (text.includes("What is this project")||
+            text.includes("What is this")) {
       p = document.createElement("p");
       p.classList.add("replay");
       p.innerText = "This is a speech recoginition website which converts human speech to text"; 
